@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Featured Section -->
+<section class="featured-section py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Welcome to The African Woman Store</h2>
+        <p class="lead">Discover the best in African fashion, beauty, and lifestyle products curated for the modern African woman.</p>
+        <a href="#" class="btn btn-primary btn-lg mt-3">Explore Our Collection</a>
+    </div>
+</section>
+
+<!-- Categories Section -->
+<section class="categories-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Shop by Category</h2>
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Fashion</h5>
+                        <p class="card-text">Explore the latest trends in African fashion.</p>
+                        <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Beauty</h5>
+                        <p class="card-text">Discover top beauty products for every occasion.</p>
+                        <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Accessories</h5>
+                        <p class="card-text">Accessorize with our unique collection.</p>
+                        <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Products Section -->
+<section class="featured-products py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="{% static 'images/placeholder1.jpg' %}" class="card-img-top" alt="Product 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">African Print Dress</h5>
+                        <p class="card-text">$49.99</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="{% static 'images/placeholder2.jpg' %}" class="card-img-top" alt="Product 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Beaded Jewelry Set</h5>
+                        <p class="card-text">$29.99</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="{% static 'images/placeholder3.jpg' %}" class="card-img-top" alt="Product 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ankara Handbag</h5>
+                        <p class="card-text">$39.99</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Promotional Banner -->
+<section class="promo-banner py-5 text-white text-center" style="background-color: var(--primary-color);">
+    <div class="container">
+        <h2>Get 20% Off on Your First Purchase!</h2>
+        <p>Use code <strong>WELCOME20</strong> at checkout.</p>
+        <a href="#" class="btn btn-light btn-lg">Shop Now</a>
+    </div>
+</section>
+
+{% endblock %}
