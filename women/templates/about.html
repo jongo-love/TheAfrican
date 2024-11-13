@@ -1,0 +1,124 @@
+<!-- women/templates/women/about.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- About Us Banner Section -->
+    <section class="about-banner text-center py-5" style="background-color: #f2f2f2; color: #333;">
+        <div class="container">
+            <h1 class="display-4 mb-3">About The African Woman</h1>
+            <p class="lead">We celebrate the rich culture, diversity, and beauty of African women through timeless fashion and design.</p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="our-story py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="display-5">Our Story</h2>
+                    <p class="lead">The African Woman is more than just a brand; it's a movement to empower women through fashion. Our story began with a passion to bring together African-inspired designs that blend culture, style, and elegance. We aim to create beautiful pieces that not only embody the spirit of Africa but also empower women to feel confident and bold in their daily lives.</p>
+                    <p>From the vibrant prints to the intricate beadwork, every piece we offer is a celebration of African heritage. We believe in creating products that tell a story, that resonate with every woman who wears them, and that bring out the beauty and strength of the African woman.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/500x400" alt="Our Story Image" class="img-fluid rounded shadow-sm" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission and Values Section -->
+    <section class="mission-values py-5" style="background-color: #f9f9f9;">
+        <div class="container text-center">
+            <h2 class="display-5 mb-4">Our Mission & Values</h2>
+            <div class="row">
+                <!-- Mission Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-0 rounded">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Mission</h5>
+                            <p class="card-text">To empower African women through fashion by offering high-quality, stylish, and affordable products that celebrate their cultural identity and beauty.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Value 1: Empowerment -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-0 rounded">
+                        <div class="card-body">
+                            <h5 class="card-title">Empowerment</h5>
+                            <p class="card-text">We empower women by offering them designs that enhance their confidence and self-expression.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Value 2: Authenticity -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-0 rounded">
+                        <div class="card-body">
+                            <h5 class="card-title">Authenticity</h5>
+                            <p class="card-text">We stay true to our African roots by providing authentic, locally inspired designs with a modern twist.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team Section -->
+    <section class="meet-team py-5">
+        <div class="container text-center">
+            <h2 class="display-5 mb-4">Meet the Team</h2>
+            <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="team-card">
+                        <img src="https://via.placeholder.com/200" class="img-fluid rounded-circle mb-3" alt="Team Member 1" />
+                        <h5>Jane Doe</h5>
+                        <p>Founder & CEO</p>
+                        <p>Jane is the visionary behind The African Woman. With her passion for fashion and African culture, she aims to make a global impact with every design.</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="col-md-3 mb-4">
+                    <div class="team-card">
+                        <img src="https://via.placeholder.com/200" class="img-fluid rounded-circle mb-3" alt="Team Member 2" />
+                        <h5>Mary Smith</h5>
+                        <p>Head of Design</p>
+                        <p>Mary leads the design team with creativity and an eye for detail, blending African heritage with contemporary trends to create stunning collections.</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="col-md-3 mb-4">
+                    <div class="team-card">
+                        <img src="https://via.placeholder.com/200" class="img-fluid rounded-circle mb-3" alt="Team Member 3" />
+                        <h5>Amara Nwachukwu</h5>
+                        <p>Marketing Director</p>
+                        <p>Amara brings the brand to life with her innovative marketing strategies, ensuring The African Woman is known worldwide.</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="col-md-3 mb-4">
+                    <div class="team-card">
+                        <img src="https://via.placeholder.com/200" class="img-fluid rounded-circle mb-3" alt="Team Member 4" />
+                        <h5>Chidinma Okafor</h5>
+                        <p>Customer Relations</p>
+                        <p>Chidinma works tirelessly to ensure every customer feels valued and cared for, providing exceptional service every step of the way.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us CTA Section -->
+    <section class="contact-us-cta py-5" style="background-color: #f2f2f2;">
+        <div class="container text-center">
+            <h2 class="display-5 mb-3">Let’s Connect</h2>
+            <p class="lead">Have any questions? Want to know more about our products or mission? Reach out to us!</p>
+            <a href="{% url 'women:contact' %}" class="btn btn-primary btn-lg">Contact Us</a>
+        </div>
+    </section>
+
+{% endblock %}
