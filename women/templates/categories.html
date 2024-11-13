@@ -1,0 +1,93 @@
+<!-- women/templates/women/categories.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- Categories Banner Section -->
+    <section class="categories-banner text-center py-5" style="background-color: #f2f2f2; color: #333;">
+        <div class="container">
+            <h1 class="display-4 mb-3">Browse Our Categories</h1>
+            <p class="lead">Explore our curated collections for every occasion. From traditional African prints to modern designs, find something you'll love!</p>
+        </div>
+    </section>
+
+    <!-- Categories Grid Section -->
+    <section class="categories-grid py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Category 1: Clothing -->
+                <div class="col-md-4 mb-4">
+                    <div class="category-card shadow-sm">
+                        <img src="https://via.placeholder.com/500x400" class="card-img-top" alt="Clothing" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Clothing</h5>
+                            <p class="card-text">Explore our stunning collection of African-inspired clothing for all occasions.</p>
+                            <a href="{% url 'women:shop' %}" class="btn btn-primary">Shop Clothing</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2: Accessories -->
+                <div class="col-md-4 mb-4">
+                    <div class="category-card shadow-sm">
+                        <img src="https://via.placeholder.com/500x400" class="card-img-top" alt="Accessories" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Accessories</h5>
+                            <p class="card-text">From beaded necklaces to elegant scarves, our accessories are designed to complement your style.</p>
+                            <a href="{% url 'women:shop' %}" class="btn btn-primary">Shop Accessories</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3: Shoes -->
+                <div class="col-md-4 mb-4">
+                    <div class="category-card shadow-sm">
+                        <img src="https://via.placeholder.com/500x400" class="card-img-top" alt="Shoes" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Shoes</h5>
+                            <p class="card-text">Step out in style with our range of beautifully crafted shoes.</p>
+                            <a href="{% url 'women:shop' %}" class="btn btn-primary">Shop Shoes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 4: Bags -->
+                <div class="col-md-4 mb-4">
+                    <div class="category-card shadow-sm">
+                        <img src="https://via.placeholder.com/500x400" class="card-img-top" alt="Bags" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bags</h5>
+                            <p class="card-text">Our collection of beautifully crafted bags brings both style and function.</p>
+                            <a href="{% url 'women:shop' %}" class="btn btn-primary">Shop Bags</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 5: Jewelry -->
+                <div class="col-md-4 mb-4">
+                    <div class="category-card shadow-sm">
+                        <img src="https://via.placeholder.com/500x400" class="card-img-top" alt="Jewelry" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jewelry</h5>
+                            <p class="card-text">Adorn yourself with our unique range of African jewelry that tells a story.</p>
+                            <a href="{% url 'women:shop' %}" class="btn btn-primary">Shop Jewelry</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 6: Home Décor -->
+                <div class="col-md-4 mb-4">
+                    <div class="category-card shadow-sm">
+                        <img src="https://via.placeholder.com/500x400" class="card-img-top" alt="Home Decor" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Home Décor</h5>
+                            <p class="card-text">Add a touch of African beauty to your home with our handcrafted décor pieces.</p>
+                            <a href="{% url 'women:shop' %}" class="btn btn-primary">Shop Home Décor</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
